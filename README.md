@@ -1,2 +1,2 @@
-# storysquare
-Final Year Project Web Application
+# StorySquare
+Web Application for Final Year Project
