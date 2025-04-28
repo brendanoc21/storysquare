@@ -37,10 +37,10 @@ const SiteHeader = ({ history }) => {
 
   return (
     <>
-      <AppBar position="fixed" color="secondary">
+      <AppBar position="fixed" color="primary">
         <Toolbar>
           <Typography variant="h4" sx={{ flexGrow: 1 }}>
-            StorySquare Application
+            <img src="images/StorySquare_Logo.png" alt="Logo" style={{width: 150}}/>
           </Typography>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             The Best Place for Brainstorming
