@@ -1,6 +1,10 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
+import { QueryClientProvider, QueryClient } from "react-query";
+import { ReactQueryDevtools } from 'react-query/devtools';
+import ProjectContextProvider from "./contexts/projectContext";
+import SiteHeader from './components/siteHeader';
 import HomePage from "./pages/homePage";
 
 const queryClient = new QueryClient({
