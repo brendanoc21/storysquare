@@ -1,4 +1,9 @@
 const HomePage = (props) => {
-    
-  };
-  export default HomePage;
+
+  return (
+    <PageTemplate
+      title="StorySquare Home Page"
+    />
+  );
+};
+export default HomePage;
