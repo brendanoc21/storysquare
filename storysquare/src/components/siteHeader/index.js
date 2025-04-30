@@ -24,6 +24,7 @@ const SiteHeader = ({ history }) => {
   const navigate = useNavigate();
 
   const menuOptions = [
+    { label: "Add Project", path: "/AddProject" },
     { label: "Log Out", path: "/" },
   ];
 
