@@ -5,12 +5,14 @@ export const ProjectContext = React.createContext(null);
 const ProjectContextProvider = (props) => {
   const [myProjects, setMyProjects] = useState( {} ) 
 
-  const newProject = () => {
+  const newProject = (project) => {
+    setMyProjects( {...myProjects, project } )
   };
 
   return (
     <ProjectContext.Provider
       value={{
+        myProjects,
         newProject,
       }}
     >

@@ -1,12 +1,17 @@
 import React from "react";
-import PageTemplate from '../components/templateProjectListPage';
+import PageTemplate from "../components/templateProjectListPage";
+import myProjects from "../contexts/projectContext";
 
 const HomePage = (props) => {
 
+  const projects = [myProjects];
+
   return (
-    <PageTemplate
-      title="StorySquare Home Page"
-    />
+      <PageTemplate
+        projects={projects}
+        title="My Projects"
+      />
   );
 };
+
 export default HomePage;

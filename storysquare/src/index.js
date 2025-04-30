@@ -6,6 +6,8 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import ProjectContextProvider from "./contexts/projectContext";
 import SiteHeader from './components/siteHeader';
 import HomePage from "./pages/homePage";
+import AddProjectPage from "./pages/addProjectPage";
+import ProjectPage from "./pages/projectPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,6 +26,8 @@ const App = () => {
         <SiteHeader />
         <ProjectContextProvider>
           <Routes>
+            <Route path="/AddProject" element={<AddProjectPage />} />
+            <Route path="/ViewProject/:id" element={<ProjectPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={ <Navigate to="/" /> } />
           </Routes>
