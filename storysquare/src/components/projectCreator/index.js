@@ -60,7 +60,7 @@ const ProjectCreator = ({ }) => {
 
   const onSubmit = (project) => {
     console.log(project);
-    context.addProject(project);
+    context.newProject(project);
     setOpen(true);
   };
 
