@@ -2,7 +2,6 @@
 Narrative Brainstorming Web Application for Writers
 
 Final Year Project
-
 Brendan O'Connor
 
 ## Features
